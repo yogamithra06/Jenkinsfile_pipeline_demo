@@ -6,13 +6,7 @@ pipeline {
                 git url: 'https://github.com/yogamithra06/Zen_Portal_Tasks.git',
                 branch: 'main'
             }
-        }        
-        stage('Install httpd') {
-            steps {
-                sh 'sudo yum install -y httpd'
-            }
-        }
-
+        }      
     }
     post {
         success {
